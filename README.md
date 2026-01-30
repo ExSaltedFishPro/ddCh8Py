@@ -37,10 +37,6 @@ Z X C V    -> HEX A 0 B F
 `games/` 目录里预置：
 15PUZZLE、BLINKY、BLITZ、BRIX、CONNECT4、GUESS、HIDDEN、INVADERS、KALEID、MAZE、MERLIN、MISSILE、PONG、PONG2、PUZZLE、SYZYGY、TANK、TETRIS、TICTAC、UFO、VBRIX、VERS、WIPEOFF 等多个 ROM，直接传入对应文件名即可启动。
 
-## 添加新 ROM
-1. 将 `.ch8` 或 `.bin` ROM 文件复制到 `games/`。
-2. 在 `run.py` 或你自己的启动脚本中调用 `chip8.load_from_file('games/YourRom')`。
-3. 可选：为 ROM 编写配置（缩放、CPU 频率、是否启用 I 增量兼容）通过修改 `Chip8` 实例属性。
 
 ## 贡献与探索
 - 想追踪声音？可在 `Chip8.run()` 中观察 `sound_timer`，结合 Pygame 播放短促的告警。
