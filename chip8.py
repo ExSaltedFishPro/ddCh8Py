@@ -7,8 +7,6 @@ class Chip8:
         n_samples = int(duration * sample_rate)
         buf = array.array("h")
         amp = int(32767 * volume)
-
-        # 方波：简单、很“CHIP-8”
         half_period = sample_rate // (2 * freq)
         if half_period <= 0:
             half_period = 1
